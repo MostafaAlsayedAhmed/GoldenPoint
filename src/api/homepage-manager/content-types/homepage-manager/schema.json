@@ -1,0 +1,94 @@
+{
+    "kind": "singleType",
+    "collectionName": "homepage_manager",
+    "info": {
+        "singularName": "homepage-manager",
+        "pluralName": "homepage-managers",
+        "displayName": "Homepage Manager",
+        "description": "Control homepage sections and layout"
+    },
+    "options": {
+        "draftAndPublish": false
+    },
+    "pluginOptions": {
+        "i18n": {
+            "localized": true
+        }
+    },
+    "attributes": {
+        "showHero": {
+            "type": "boolean",
+            "default": true
+        },
+        "activeHero": {
+            "type": "relation",
+            "relation": "oneToOne",
+            "target": "api::hero-banner.hero-banner"
+        },
+        "showFeaturedArticle": {
+            "type": "boolean",
+            "default": true
+        },
+        "featuredArticle": {
+            "type": "relation",
+            "relation": "oneToOne",
+            "target": "api::article.article"
+        },
+        "showServices": {
+            "type": "boolean",
+            "default": true
+        },
+        "showAbout": {
+            "type": "boolean",
+            "default": true
+        },
+        "activeAboutSection": {
+            "type": "relation",
+            "relation": "oneToOne",
+            "target": "api::about-section.about-section"
+        },
+        "showLatestArticles": {
+            "type": "boolean",
+            "default": true
+        },
+        "latestArticlesCount": {
+            "type": "integer",
+            "default": 6,
+            "min": 3,
+            "max": 12
+        },
+        "showStatistics": {
+            "type": "boolean",
+            "default": true
+        },
+        "showProcess": {
+            "type": "boolean",
+            "default": true
+        },
+        "showFAQ": {
+            "type": "boolean",
+            "default": true
+        },
+        "faqCount": {
+            "type": "integer",
+            "default": 5,
+            "min": 3,
+            "max": 10
+        },
+        "showTestimonials": {
+            "type": "boolean",
+            "default": true
+        },
+        "showPartners": {
+            "type": "boolean",
+            "default": true
+        },
+        "showNewsletter": {
+            "type": "boolean",
+            "default": true
+        },
+        "sectionOrder": {
+            "type": "json"
+        }
+    }
+}

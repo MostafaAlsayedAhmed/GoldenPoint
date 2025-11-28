@@ -1,0 +1,76 @@
+{
+    "kind": "collectionType",
+    "collectionName": "hero_banners",
+    "info": {
+        "singularName": "hero-banner",
+        "pluralName": "hero-banners",
+        "displayName": "Hero Banner",
+        "description": "Homepage hero section content"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {
+        "i18n": {
+            "localized": true
+        }
+    },
+    "attributes": {
+        "title": {
+            "type": "string",
+            "required": true,
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            }
+        },
+        "subtitle": {
+            "type": "text",
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            }
+        },
+        "description": {
+            "type": "text",
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            }
+        },
+        "backgroundImage": {
+            "type": "media",
+            "multiple": false,
+            "allowedTypes": [
+                "images",
+                "videos"
+            ]
+        },
+        "ctaText": {
+            "type": "string",
+            "pluginOptions": {
+                "i18n": {
+                    "localized": true
+                }
+            }
+        },
+        "ctaLink": {
+            "type": "string"
+        },
+        "showStatistics": {
+            "type": "boolean",
+            "default": true
+        },
+        "isActive": {
+            "type": "boolean",
+            "default": true
+        },
+        "order": {
+            "type": "integer",
+            "default": 0
+        }
+    }
+}
