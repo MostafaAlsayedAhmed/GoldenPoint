@@ -9,7 +9,6 @@ export default () => ({
   documentation: {
     enabled: true,
     config: {
-      servers: [{ url: '/' }],
       'x-strapi-config': {
         swaggerUI: {
           persistAuthorization: true,
