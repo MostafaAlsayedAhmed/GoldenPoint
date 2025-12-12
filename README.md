@@ -32,6 +32,7 @@ Start Strapi in development mode:
 
 ```bash
 npm run develop
+pnpm dev
 ```
 
 The admin panel will be available at: **http://localhost:1337/admin**
@@ -54,34 +55,40 @@ On first run, you'll be prompted to create an admin user.
 ### Collection Types
 
 1. **Article** - Blog posts and market analysis
+
    - Title, slug, excerpt, content (rich text)
    - Featured image, category, publish date
    - Author, SEO fields
    - i18n enabled
 
 2. **FAQ** - Frequently asked questions
+
    - Question, answer (rich text)
    - Category, order, active status
    - i18n enabled
 
 3. **Market Category** - Market types (US, European, Asian, etc.)
+
    - Name, slug, description
    - Icon image, order
    - Relation to articles
    - i18n enabled
 
 4. **Team Member** - Company team and experts
+
    - Name, position, bio
    - Photo, social links
    - i18n enabled
 
 5. **Testimonial** - Client reviews
+
    - Client name, company, content
    - Rating (1-5), photo
    - Active status, order
    - i18n enabled
 
 6. **Statistic** - Homepage counters
+
    - Label, value, suffix
    - Icon, order
    - i18n enabled
@@ -109,6 +116,7 @@ On first run, you'll be prompted to create an admin user.
 - **Available**: Arabic (`ar`), English (`en`)
 
 To add more locales:
+
 1. Go to Settings → Internationalization
 2. Click "Add new locale"
 3. Select the locale and save
@@ -116,6 +124,7 @@ To add more locales:
 ### CORS
 
 CORS is configured to allow requests from:
+
 - `http://localhost:3000`
 - `http://localhost:3001`
 - `http://localhost:3002`

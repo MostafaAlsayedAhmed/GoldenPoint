@@ -10,6 +10,7 @@ export default () => ({
     enabled: true,
     config: {
       'x-strapi-config': {
+        restrictedAccess: false,
         swaggerUI: {
           persistAuthorization: true,
         },
