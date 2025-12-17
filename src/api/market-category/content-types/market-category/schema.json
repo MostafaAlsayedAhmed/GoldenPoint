@@ -1,59 +1,74 @@
 {
-    "kind": "collectionType",
-    "collectionName": "market_categories",
-    "info": {
-        "singularName": "market-category",
-        "pluralName": "market-categories",
-        "displayName": "Market Category",
-        "description": "Different market types (US, European, Asian, etc.)"
-    },
-    "options": {
-        "draftAndPublish": true
-    },
-    "pluginOptions": {
-        "i18n": {
-            "localized": true
-        }
-    },
-    "attributes": {
-        "name": {
-            "type": "string",
-            "required": true,
-            "pluginOptions": {
-                "i18n": {
-                    "localized": true
-                }
-            }
-        },
-        "slug": {
-            "type": "uid",
-            "targetField": "name",
-            "required": true
-        },
-        "description": {
-            "type": "text",
-            "pluginOptions": {
-                "i18n": {
-                    "localized": true
-                }
-            }
-        },
-        "icon": {
-            "type": "media",
-            "multiple": false,
-            "allowedTypes": [
-                "images"
-            ]
-        },
-        "order": {
-            "type": "integer",
-            "default": 0
-        },
-        "articles": {
-            "type": "relation",
-            "relation": "oneToMany",
-            "target": "api::article.article",
-            "mappedBy": "category"
-        }
+  "kind": "collectionType",
+  "collectionName": "market_categories",
+  "info": {
+    "singularName": "market-category",
+    "pluralName": "market-categories",
+    "displayName": "Market Category",
+    "description": "Different market types (US, European, Asian, etc.)"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
     }
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "order": {
+      "type": "integer",
+      "default": 0,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "articles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::article.article",
+      "mappedBy": "category",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    }
+  }
 }

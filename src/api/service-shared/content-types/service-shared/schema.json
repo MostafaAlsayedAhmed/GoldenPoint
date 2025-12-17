@@ -1,0 +1,32 @@
+{
+  "kind": "singleType",
+  "collectionName": "service_shareds",
+  "info": {
+    "singularName": "service-shared",
+    "pluralName": "service-shareds",
+    "displayName": "serviceShared"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "price": {
+      "type": "decimal",
+      "required": true
+    },
+    "date": {
+      "type": "datetime"
+    }
+  }
+}

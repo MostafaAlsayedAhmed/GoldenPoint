@@ -44,11 +44,21 @@
         },
         "order": {
             "type": "integer",
-            "default": 0
+            "default": 0,
+            "pluginOptions": {
+                "i18n": {
+                    "localized": false
+                }
+            }
         },
         "isActive": {
             "type": "boolean",
-            "default": true
+            "default": true,
+            "pluginOptions": {
+                "i18n": {
+                    "localized": false
+                }
+            }
         }
     }
 }

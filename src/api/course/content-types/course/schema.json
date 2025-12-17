@@ -63,23 +63,48 @@
                 "advanced",
                 "expert"
             ],
-            "default": "beginner"
+            "default": "beginner",
+            "pluginOptions": {
+                "i18n": {
+                    "localized": false
+                }
+            }
         },
         "instructor": {
             "type": "relation",
             "relation": "manyToOne",
             "target": "api::instructor.instructor",
-            "inversedBy": "courses"
+            "inversedBy": "courses",
+            "pluginOptions": {
+                "i18n": {
+                    "localized": false
+                }
+            }
         },
         "price": {
-            "type": "decimal"
+            "type": "decimal",
+            "pluginOptions": {
+                "i18n": {
+                    "localized": false
+                }
+            }
         },
         "currency": {
             "type": "string",
-            "default": "EGP"
+            "default": "EGP",
+            "pluginOptions": {
+                "i18n": {
+                    "localized": false
+                }
+            }
         },
         "includes": {
-            "type": "json"
+            "type": "json",
+            "pluginOptions": {
+                "i18n": {
+                    "localized": false
+                }
+            }
         },
         "category": {
             "type": "string",
@@ -94,15 +119,30 @@
             "multiple": false,
             "allowedTypes": [
                 "images"
-            ]
+            ],
+            "pluginOptions": {
+                "i18n": {
+                    "localized": false
+                }
+            }
         },
         "featured": {
             "type": "boolean",
-            "default": false
+            "default": false,
+            "pluginOptions": {
+                "i18n": {
+                    "localized": false
+                }
+            }
         },
         "order": {
             "type": "integer",
-            "default": 0
+            "default": 0,
+            "pluginOptions": {
+                "i18n": {
+                    "localized": false
+                }
+            }
         },
         "metaTitle": {
             "type": "string",

@@ -1,11 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "services",
+  "collectionName": "the_tours",
   "info": {
-    "singularName": "service",
-    "pluralName": "services",
-    "displayName": "Service",
-    "description": "Investment services offered"
+    "singularName": "the-tour",
+    "pluralName": "the-tours",
+    "displayName": "TheTour"
   },
   "options": {
     "draftAndPublish": true
@@ -16,7 +15,7 @@
     }
   },
   "attributes": {
-    "title": {
+    "name": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -25,13 +24,14 @@
       },
       "required": true
     },
-    "description": {
-      "type": "richtext",
+    "price": {
+      "type": "decimal",
       "pluginOptions": {
         "i18n": {
-          "localized": true
+          "localized": false
         }
-      }
+      },
+      "required": true
     }
   }
 }

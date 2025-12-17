@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_tours_trips",
+  "info": {
+    "displayName": "trip",
+    "icon": "crown"
+  },
+  "options": {},
+  "attributes": {
+    "days": {
+      "type": "integer"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "start_date": {
+      "type": "date"
+    },
+    "end_date": {
+      "type": "date"
+    }
+  },
+  "config": {}
+}
